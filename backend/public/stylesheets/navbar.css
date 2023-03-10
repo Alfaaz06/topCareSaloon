@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 10000;
+    background-color: #7adff35e;
+    height: 4rem;
+    position: fixed;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navmenu>a {
+    margin: 5px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

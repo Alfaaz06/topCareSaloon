@@ -1,0 +1,46 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.js"></script>
+<div class="">
+    <div class="contact" id="contact">
+        <div class="contact-Heading">
+            <h2>Get In Touch</h2>
+        </div>
+        <% if(message.length>0) {%>
+            <div class="alert">
+                <%= message%>
+            </div>
+            <% } %>
+                <div class="contact-Section">
+
+                    <div class="contactLeft">
+                        <form action="/send/message" method="POST" class='contactForm'>
+                            <input type="text" class="inputBox credential" name="name" placeholder="Enter your name" required>
+                            <input type="text" class="inputBox credential" name="phone" placeholder="Enter your Phone Number" required>
+                            <textarea class=" textarea inputBox" name="message" placeholder="Write a message for us..."></textarea>
+                            <input type="submit" value="Send" class="submitBtn">
+                        </form>
+                    </div>
+                    <div class="contactRight">
+                        <div class="address">
+                            <h3>Address : </h3>
+                            <p>42, Shankar Nagar, Near Nirala Nagar ON, Jain Mandir Road, Daliganj, Lucknow-226020</p>
+                        </div>
+                        <div class="phoneNumber">
+                            <h3>Phone Number : </h3>
+                            <p>7007 843 999, 9335 262 703</p>
+                        </div>
+                        <div class="email">
+                            <h3>Email us at: </h3>
+                            <p>topcare.beautyparlour@gmail.com</p>
+                        </div>
+                        <div class="social">
+                            <a href="mailto:topcare.beautyparlour@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/The-Top-care-Beauty-Salon-make-up/100064380990184/"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://wa.me/7007843999?text="><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="services" id='services'>
+    <div class="service-Heading">
+        <h2>Our Services</h2>
+    </div>
+    <div class="service-Text">
+        <p class='quote'> “Beauty begins the moment you decide to be yourself.”</p>
+        <p class='name'> —Coco Chanel</p>
+        <p class='textData'>Be it a Wedding Ceremony or a Kitty Party, The Top Care Beauty Salon and Makeup is one stop solution of all your grooming and makeup. We provide a varied range of beatuy care services such as Hair Colour, Manicure, Padicure, Bridal Makeup and
+            much more!!! </p>
+    </div>
+    <div class="service-Card">
+
+        <% const services = ["Mehendi", "Threading", "Make Up", "Hair", "Manicure", "Pedicure", "Waxing", "Facials", "Bleach", "Clean Up"]; %>
+            <% for(let i=1;i<=10;i++) {%>
+                <div class="card">
+                    <img class="service-image" src="images/<%= i+'.jpg' %>">
+                    <h3 class="service-name">
+                        <%= services[i-1] %>
+                    </h3>
+                </div>
+                <% } %>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/navbar.css" type="text/css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navmenu">
+            <a class="links" href="#home">Home</a>
+            <a class="links" href="#about">About Us</a>
+            <a class="links" href="#services">Services</a>
+            <a class="links" href="#gallery">Our Work</a>
+            <a class="links" href="#contact">Contact Us</a>
+        </div>
+        <div class="hamburger">
+            <div class="logoname">
+                <h2>The Top Care Beauty Salon & Makeup
+                    <h2>
+            </div>
+            <div class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const hamburger = document.querySelector(".hamburger");
+        const navmenu = document.querySelector(".navmenu");
+        hamburger.addEventListener("click", () => {
+            console.log("clicked");
+            hamburger.classList.toggle("active");
+            navmenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".links").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navmenu.classList.remove("active");
+        }))
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
