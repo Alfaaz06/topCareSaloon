@@ -7,6 +7,7 @@ const __dirname = path.resolve();
 import session from 'express-session'
 import flash from 'connect-flash'
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/backend/public')))
